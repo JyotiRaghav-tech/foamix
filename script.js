@@ -1,0 +1,10 @@
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+
+function showNextTestimonial() {
+  testimonials[currentTestimonial].classList.remove('active');
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  testimonials[currentTestimonial].classList.add('active');
+}
+
+setInterval(showNextTestimonial, 4000);
