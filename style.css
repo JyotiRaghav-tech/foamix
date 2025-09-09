@@ -26,6 +26,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .logo {
@@ -53,13 +56,19 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero.jpg') center/cover no-repeat;
+  position: relative;
   height: 90vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 
 .hero h1 {
@@ -71,6 +80,20 @@ header nav ul li a:hover {
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #FF4500;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #e03e00;
 }
 
 /* Featured Products */
@@ -99,21 +122,24 @@ header nav ul li a:hover {
   flex: 1 1 calc(33% - 20px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card img {
   width: 100%;
   height: 250px;
-  /* keep same height */
   object-fit: cover;
-  /* maintains aspect ratio */
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .product-card h3 {
   font-size: 1.2rem;
-  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .whatsapp-btn {
@@ -196,5 +222,13 @@ footer .social-icons a {
   header nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
