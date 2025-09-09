@@ -53,36 +53,24 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
-  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero.jpg') center/cover no-repeat;
+  height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 30px;
-}
-
-.hero .btn {
-  background: #FF4500;
-  color: #fff;
-  padding: 12px 30px;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.hero .btn:hover {
-  background: #e03e00;
 }
 
 /* Featured Products */
@@ -115,13 +103,17 @@ header nav ul li a:hover {
 
 .product-card img {
   width: 100%;
+  height: 250px;
+  /* keep same height */
+  object-fit: cover;
+  /* maintains aspect ratio */
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .product-card h3 {
-  margin-bottom: 15px;
-  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .whatsapp-btn {
