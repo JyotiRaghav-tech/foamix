@@ -1,56 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - Foamix Mattress</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Foamix</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    Foamix Mattress
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <!-- Floating WhatsApp/Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919876543210" class="call">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
 
-  <section class="about">
-    <h2 class="section-title">About Foamix Mattress</h2>
-    <p>
-      At <strong>Foamix Mattress</strong>, we believe in delivering comfort that transforms your sleep. Founded with a passion for innovation and quality, our mattresses are designed to offer support, breathability, and luxury at an affordable price.
-    </p>
-    <p>
-      Our journey began with a simple mission — to help people sleep better. Every Foamix product is made with precision and care using high-quality materials, combining modern technology with traditional craftsmanship.
-    </p>
-    <p>
-      Whether you're looking for orthopedic support, soft cloud-like feel, or eco-friendly options — we have something for everyone.
-    </p>
-    <p>
-      We’re proudly made in India and committed to delivering comfort across the nation.
-    </p>
-
-    <div class="about-highlights">
-      <div class="highlight-box">
-        <h3>Quality Materials</h3>
-        <p>We use premium foam, hypoallergenic fabrics, and breathable covers.</p>
-      </div>
-      <div class="highlight-box">
-        <h3>Made in India</h3>
-        <p>Locally crafted with care to ensure excellence and sustainability.</p>
-      </div>
-      <div class="highlight-box">
-        <h3>10,000+ Happy Customers</h3>
-        <p>Trusted by families, professionals, and dreamers alike.</p>
-      </div>
-    </div>
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <h1>About Foamix</h1>
+    <p>Delivering comfort, quality, and innovation in sleep solutions.</p>
   </section>
 
+  <!-- Main Container -->
+  <div class="about-container">
+    
+
+    <!-- Our Story -->
+    <section class="our-story fade-in">
+      <h2>Our Story</h2>
+      <p>
+        Foamix started with a vision to provide the best sleep solutions for every home.
+        Our mattresses and pillows are designed with comfort, durability, and health in mind.
+        We combine innovation with quality to ensure you wake up refreshed every day.
+      </p>
+    </section>
+
+    
+
+    <!-- Core Values -->
+    <section class="core-values fade-in">
+      <h2>Our Core Values</h2>
+      <div class="values-cards">
+        <div class="value-card">
+          <i class="fas fa-gem"></i>
+          <h3>Quality</h3>
+          <p>Premium materials for long-lasting comfort.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Innovation</h3>
+          <p>Modern designs and innovative sleep solutions.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Eco-Friendly</h3>
+          <p>Products made with sustainable and safe materials.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-heart"></i>
+          <h3>Customer Care</h3>
+          <p>We prioritize customer satisfaction above all.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fun Facts / Stats -->
+    <section class="fun-facts fade-in">
+      <h2>Fun Facts About Foamix</h2>
+      <div class="fun-cards">
+        <div class="fun-card">
+          <i class="fas fa-users"></i>
+          <h3 class="counter" data-target="5000">0</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="fun-card">
+          <i class="fas fa-box-open"></i>
+          <h3 class="counter" data-target="200">0</h3>
+          <p>Products Sold</p>
+        </div>
+        <div class="fun-card">
+          <i class="fas fa-award"></i>
+          <h3 class="counter" data-target="10">0</h3>
+          <p>Awards Won</p>
+        </div>
+        <div class="fun-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Years of Excellence</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media fade-in">
+      <h2>Connect With Us</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919876543210"><i class="fas fa-phone"></i></a>
+      </div>
+    </section>
+
+  </div> <!-- End container -->
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Foamix Mattress. All rights reserved.
+    <p>&copy; 2025 Foamix. All rights reserved.</p>
   </footer>
+
+  <!-- JS for Counters -->
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 20);
+        } else { counter.innerText = target; }
+      };
+      updateCounter();
+    });
+  </script>
+
 </body>
+
 </html>

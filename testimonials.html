@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foamix - Testimonials</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, #ffe5d9, #fff5f0);
+            padding: 80px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .testimonials-header h2 {
+            font-size: 42px;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .testimonials-header p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            flex: 1;
+            padding-bottom: 20px;
+        }
+
+        .testimonial-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 40px 25px;
+            flex: 0 0 350px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-icon {
+            font-size: 70px;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .testimonial-card h4 {
+            color: #0077cc;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Fade-in Animation */
+        .testimonial-card.fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInAnim 1s forwards;
+        }
+
+        .testimonial-card.fade-in:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .testimonial-card.fade-in:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .testimonial-card.fade-in:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .testimonial-card.fade-in:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        .testimonial-card.fade-in:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeInAnim {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Arrow Buttons */
+        .prev,
+        .next {
+            background-color: #ff6600;
+            border: none;
+            color: white;
+            font-size: 28px;
+            padding: 12px 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+            z-index: 5;
+        }
+
+        .prev:hover,
+        .next:hover {
+            transform: scale(1.1);
+        }
+
+        /* Dot indicators */
+        .testimonial-dots {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .testimonial-dots .dot {
+            height: 14px;
+            width: 14px;
+            margin: 0 6px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .testimonial-dots .dot.active {
+            background-color: #ff6600;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 1024px) {
+            .testimonial-wrapper {
+                flex-direction: column;
+            }
+
+            .prev,
+            .next {
+                margin: 15px 0;
+            }
+
+            .testimonial-card {
+                flex: 0 0 80%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonial-slider {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Foamix</h1>
+        <p>Premium Mattresses & Pillows</p>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <h2>What Our Customers Say</h2>
+            <p>Real feedback from our satisfied Foamix customers.</p>
+        </div>
+
+        <div class="testimonial-wrapper">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-user-circle testimonial-icon"></i>
+                    <p>"The mattress I bought from Foamix completely changed my sleep quality! Highly recommend."</p>
+                    <h4>- Priya R.</h4>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-user-circle testimonial-icon"></i>
+                    <p>"Soft pillows and amazing customer service. Foamix products are worth every penny!"</p>
+                    <h4>- Rohit S.</h4>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-user-circle testimonial-icon"></i>
+                    <p>"Comfortable, stylish, and durable. I love my new mattress!"</p>
+                    <h4>- Anjali K.</h4>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-user-circle testimonial-icon"></i>
+                    <p>"The pillow collection is amazing. I finally get a restful night every day!"</p>
+                    <h4>- Vikram P.</h4>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-user-circle testimonial-icon"></i>
+                    <p>"Foamix products are the perfect blend of comfort and style. Love it!"</p>
+                    <h4>- Sonia T.</h4>
+                </div>
+            </div>
+
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Dot indicators -->
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Foamix. All Rights Reserved.</p>
+        <p>
+            <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a> |
+            <a href="tel:+919876543210"><i class="fas fa-phone"></i> Call</a>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const slider = document.querySelector('.testimonial-slider');
+        const next = document.querySelector('.next');
+        const prev = document.querySelector('.prev');
+        const dots = document.querySelectorAll('.dot');
+        const scrollAmount = 370;
+
+        function updateDots() {
+            const scrollLeft = slider.scrollLeft;
+            const activeIndex = Math.round(scrollLeft / scrollAmount);
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === activeIndex);
+            });
+        }
+
+        next.addEventListener('click', () => {
+            slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            setTimeout(updateDots, 300);
+        });
+
+        prev.addEventListener('click', () => {
+            slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            setTimeout(updateDots, 300);
+        });
+
+        slider.addEventListener('scroll', () => { setTimeout(updateDots, 100); });
+
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                slider.scrollTo({ left: idx * scrollAmount, behavior: 'smooth' });
+                updateDots();
+            });
+        });
+    </script>
+</body>
+
+</html>

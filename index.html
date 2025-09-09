@@ -6,99 +6,327 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foamix Mattress</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
-  <!-- Header / Navbar -->
+  <!-- Header / Navigation -->
   <header>
-    <div class="container header-container">
-      <div class="logo">Foamix</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="logo">
+        <h2>Foamix</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Products <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="mattress.html">Mattresses</a></li>
+            <li><a href="pillow.html">Pillows</a></li>
+          </ul>
+        </li>
+        
+        
+        <li><a href="testimonials.html">Testimonials</a></li>
+
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Video Section -->
   <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="videos/mattress-hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div class="hero-overlay">
-      <div class="container hero-content">
-        <h1>Sleep Better with Foamix Mattress</h1>
-        <p>Comfortable, durable, and affordable mattresses for your perfect sleep.</p>
-        <a href="#products" class="btn">See Our Products</a>
+      <!-- Scroll Down Arrow -->
+      <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <div class="hero-text">
+        <h1>Comfortable Sleep Starts Here</h1>
+        <p>Premium mattresses and pillows designed for your best night's sleep.</p>
+        <a href="products.html" class="btn">Explore Products</a>
       </div>
     </div>
   </section>
 
-  <!-- Featured Products -->
-  <section id="products" class="featured-products">
-    <div class="container">
-      <h2>Our Top Products</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/mattress1.jpg" alt="Foamix Comfort">
-          <h3>Foamix Comfort</h3>
-          <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
-        </div>
-        <div class="product-card">
-          <img src="images/mattress2.jpg" alt="Foamix Deluxe">
-          <h3>Foamix Deluxe</h3>
-          <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
-        </div>
-        <div class="product-card">
-          <img src="images/mattress3.jpg" alt="Foamix Premium">
-          <h3>Foamix Premium</h3>
-          <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
-        </div>
+  <section class="features">
+    <h2>Why Choose Foamix?</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-bed"></i>
+        <h3>Comfortable Sleep</h3>
+        <p>Our mattresses provide perfect support for all sleeping positions.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Friendly</h3>
+        <p>Made with safe, non-toxic materials for you and the environment.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-star"></i>
+        <h3>Premium Quality</h3>
+        <p>Durable mattresses and pillows crafted to last for years.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>We deliver across India quickly and safely.</p>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="why-choose-us">
-    <div class="container">
-      <h2>Why Choose Foamix?</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Comfort</h3>
-          <p>Experience unmatched sleep comfort with our mattresses.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Durability</h3>
-          <p>High-quality materials ensure long-lasting use.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Free Delivery</h3>
-          <p>Get your mattress delivered directly to your doorstep.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Warranty</h3>
-          <p>Peace of mind with our extended warranty on all products.</p>
-        </div>
-      </div>
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2>Upgrade Your Sleep Today!</h2>
+      <p>Get the comfort you deserve with Foamix mattresses and pillows.</p>
+      <a href="products.html" class="btn">Shop Now</a>
     </div>
   </section>
 
+  <section class="how-it-works fade-in">
+    <h2>How Foamix Works</h2>
+    <div class="steps">
+      <div class="step-card fade-in">
+        <i class="fas fa-search"></i>
+        <h3>Choose Your Product</h3>
+        <p>Select the mattress or pillow that suits your sleep style.</p>
+      </div>
+      <div class="step-card fade-in">
+        <i class="fas fa-cart-plus"></i>
+        <h3>Place Your Order</h3>
+        <p>Quickly order via WhatsApp or our website checkout.</p>
+      </div>
+      <div class="step-card fade-in">
+        <i class="fas fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>Get your products delivered safely and quickly to your home.</p>
+      </div>
+      <div class="step-card fade-in">
+        <i class="fas fa-smile"></i>
+        <h3>Enjoy Your Sleep</h3>
+        <p>Relax and enjoy better sleep with Foamix comfort.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+
+  <section class="product-comparison fade-in">
+    <h2>Compare Products</h2>
+    <div class="comparison-cards">
+  
+      <!-- Mattress 1 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix Premium Mattress</h3>
+        <p>Softness: Medium</p>
+        <p>Durability: 9/10</p>
+        <p>Warranty: 5 years</p>
+      </div>
+  
+      <!-- Mattress 2 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix Orthopedic Mattress</h3>
+        <p>Softness: Firm</p>
+        <p>Durability: 10/10</p>
+        <p>Warranty: 7 years</p>
+      </div>
+  
+      <!-- Pillow 1 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix Memory Pillow</h3>
+        <p>Softness: Soft</p>
+        <p>Durability: 8/10</p>
+        <p>Warranty: 3 years</p>
+      </div>
+  
+      <!-- Pillow 2 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix Soft Pillow</h3>
+        <p>Softness: Very Soft</p>
+        <p>Durability: 7/10</p>
+        <p>Warranty: 2 years</p>
+      </div>
+  
+      <!-- Mattress 3 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix CoolGel Mattress</h3>
+        <p>Softness: Medium-Firm</p>
+        <p>Durability: 9/10</p>
+        <p>Warranty: 5 years</p>
+      </div>
+  
+      <!-- Pillow 3 -->
+      <div class="comparison-card fade-in">
+        <h3>Foamix Contour Pillow</h3>
+        <p>Softness: Medium</p>
+        <p>Durability: 8/10</p>
+        <p>Warranty: 3 years</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <section class="reviews fade-in">
+    <h2>Customer Reviews</h2>
+    <div class="review-cards">
+  
+      <div class="review-card fade-in">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>“Best mattress ever! I sleep so well now.”</p>
+        <h4>- Ramesh K.</h4>
+      </div>
+  
+      <div class="review-card fade-in">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>“Pillows are soft and breathable. Highly recommend.”</p>
+        <h4>- Sita P.</h4>
+      </div>
+  
+      <div class="review-card fade-in">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>“Amazing comfort and great customer service.”</p>
+        <h4>- Anil S.</h4>
+      </div>
+  
+      <div class="review-card fade-in">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>“Foamix pillows are life-changing! My neck pain is gone.”</p>
+        <h4>- Priya M.</h4>
+      </div>
+  
+      <div class="review-card fade-in">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>“The delivery was super fast and the product quality is top-notch.”</p>
+        <h4>- Sunil R.</h4>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p>"The Foamix mattress changed the way I sleep. Highly recommend!"</p>
+        <h4>- Priya S.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Soft pillows and excellent support. I sleep better than ever."</p>
+        <h4>- Rohit K.</h4>
+      </div>
+    </div>
+    <a href="testimonials.html" class="btn">Read More</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>What is the warranty on Foamix products?</h4>
+      <p>All Foamix mattresses and pillows come with a 2-year warranty against manufacturing defects.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I order online via WhatsApp?</h4>
+      <p>Yes! Click the “Order via WhatsApp” button on any product to place your order instantly.</p>
+    </div>
+    <a href="faq.html" class="btn">View All FAQs</a>
+  </section>
+
+  <section class="social-handles fade-in">
+    <h2>Connect With Us</h2>
+    <div class="social-buttons">
+      <a href="https://wa.me/919876543210" target="_blank" class="social-btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.instagram.com/foamix.mattress/" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
+  </section>
+  
   <!-- Footer -->
   <footer>
-    <div class="container footer-content">
-      <p>© 2025 Foamix Mattress. All Rights Reserved.</p>
-      <div class="social-icons">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">LinkedIn</a>
+    <div class="footer-content">
+      <h3>Foamix</h3>
+      <p>Premium mattresses and pillows for a restful sleep.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
+      <p class="contact-info">Contact: +91 9876543210 | Email: info@foamix.com</p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Foamix. All Rights Reserved.
     </div>
   </footer>
+
+  <!-- Floating Contact Buttons -->
+  <div class="floating-contact">
+    <a href="https://wa.me/919876543210" target="_blank" class="contact-btn whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919876543210" class="contact-btn call">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <script>
+    const dropBtn = document.querySelector('.dropbtn');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('active');
+    });
+  </script>
+<script>
+  const slider = document.querySelector('.testimonial-slider');
+  const next = document.querySelector('.next');
+  const prev = document.querySelector('.prev');
+
+  const scrollAmount = 370; // card width + gap
+
+  next.addEventListener('click', () => {
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  prev.addEventListener('click', () => {
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+</script>
+  
 
 </body>
 
 </html>
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+
+  const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
