@@ -2210,3 +2210,595 @@ header {
 .social-login a:hover {
   opacity: 0.85;
 }
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+
+.feature {
+  width: 220px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1f3c88;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+}
+
+.foamix-work {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.foamix-work h2 {
+  font-size: 28px;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.foamix-work .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.work-step {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.work-step:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.work-step img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.work-step h3 {
+  font-size: 18px;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.work-step p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Foamix Works Section */
+.foamix-works {
+  padding: 70px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.foamix-works h2 {
+  font-size: 32px;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.foamix-works .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.work-card {
+  background: #fff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.work-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.work-card h3 {
+  font-size: 18px;
+  color: #1f3c88;
+  margin-bottom: 8px;
+}
+
+.work-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Promo Video */
+.foamix-video {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.foamix-video video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.foamix-works .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6600;
+  /* Foamix orange accent */
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.foamix-works h2 {
+  font-size: 42px;
+  /* Heading ko bada kar diya */
+  font-weight: 800;
+  /* Heading ko bold banaya */
+  color: #1f3c88;
+  /* Attractive dark blue color */
+  text-transform: uppercase;
+  /* Sare letters capital me */
+  letter-spacing: 1px;
+  /* Thoda space diya letters ke beech */
+  margin-bottom: 15px;
+}
+
+.foamix-text {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  /* Thoda bada font */
+  font-weight: bold;
+  /* Bold text */
+  color: #1f3c88;
+  /* Dark blue color */
+  text-align: center;
+  line-height: 1.9;
+  font-family: "Poppins", sans-serif;
+  /* Modern font */
+}
+.foamix-text2 {
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 15px 20px;
+  font-size: 19px;
+  /* Thoda bada font */
+  font-weight: bold;
+  /* Bold text */
+  color: #ff6600;
+  /* Attractive orange color */
+  text-align: center;
+  line-height: 1.9;
+  font-family: "Montserrat", sans-serif;
+  /* Stylish modern font */
+  background-color: #f9f9f9;
+  /* Light background */
+  border-radius: 12px;
+  /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.foamix-promo {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.foamix-promo p {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #1f3c88;
+  margin: 12px 0;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+/* Hover Effect */
+.foamix-promo p:hover {
+  color: #ff6600;
+  transform: scale(1.05);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.foamix-about {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9ff;
+  border-left: 6px solid #1f3c88;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.foamix-about p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.7;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.foamix-about:hover {
+  background-color: #eef3ff;
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌟 Universal Space Fix */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Paragraphs ke beech ka space fix */
+p {
+  margin: 8px 0;
+  /* Default gap thoda kam */
+  line-height: 1.5;
+  /* Paragraph lines ka spacing balanced */
+}
+
+/* 🌟 Heading aur Paragraph ke beech ka gap kam */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  /* Upar-niche ka gap controlled */
+}
+
+/* 🌟 Section ke upar-niche equal space */
+section {
+  margin: 20px 0;
+  /* Har section me balanced spacing */
+}
+
+/* 🌟 Image ke neeche ka gap fix */
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 🌟 Buttons ke upar-niche ka gap control */
+button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* 🌟 Mobile view spacing fix */
+@media (max-width: 768px) {
+  section {
+    margin: 15px 0;
+  }
+
+  p {
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+}
+
+/* 🌟 About Page Compact Layout */
+.about-page {
+  padding: 0;
+  margin: 0;
+}
+
+/* 🌟 About Page Main Container */
+.about-page .container,
+.about-page .about-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 🌟 Headings ko compact karo */
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4 {
+  margin: 5px 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* 🌟 Paragraphs ko near-near rakho */
+.about-page p {
+  margin: 3px 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 17px;
+  color: #333;
+}
+
+/* 🌟 Image spacing remove */
+.about-page img {
+  display: block;
+  margin: 5px auto;
+  padding: 0;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* 🌟 Section spacing remove */
+.about-page section {
+  margin: 8px 0;
+  padding: 0;
+}
+
+/* 🌟 Buttons bhi compact honge */
+.about-page button {
+  margin: 5px 0;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+/* 🌟 Mobile view optimization */
+@media (max-width: 768px) {
+  .about-page p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .about-page h1,
+  .about-page h2 {
+    font-size: 22px;
+  }
+}
+
+.about-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #333;
+  margin: 12px 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for premium feel */
+.about-text:hover {
+  color: #ff6600;
+  transform: scale(1.02);
+}
+
+/* 🌟 About Page Main Container */
+.about-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9ff;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌟 Title Styling */
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #1f3c88;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 🌟 Paragraph Styling */
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlighted Words */
+.about-text span {
+  color: #ff6600;
+  font-weight: 700;
+}
+
+/* Hover Effects */
+.about-text:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.mattress-info {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #f9f9ff;
+  border-left: 6px solid #1f3c88;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.mattress-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.mattress-info p span {
+  color: #ff6600;
+  font-weight: 700;
+}
+
+/* Hover Effect */
+.mattress-info:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .mattress-info {
+    padding: 12px;
+  }
+
+  .mattress-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.pillow-info {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #fef9f3;
+  border-left: 6px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.pillow-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.pillow-info p span {
+  color: #1f3c88;
+  font-weight: 700;
+}
+
+/* Hover Effect */
+.pillow-info:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .pillow-info {
+    padding: 12px;
+  }
+
+  .pillow-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
