@@ -26,6 +26,12 @@
     <nav class="navbar">
       <!-- Logo -->
       <div class="logo">
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
         <h2>Foamix</h2>
       </div>
   
@@ -445,7 +451,15 @@
   }
 </script>
 
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+  
 </body>
 
 </html>
