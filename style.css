@@ -1717,3 +1717,496 @@ footer {
     gap: 25px;
   }
 }
+
+/* Offer Highlights Section */
+.offer-highlights {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.offer-box {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-box i {
+  font-size: 40px;
+  color: #004aad;
+  margin-bottom: 12px;
+}
+
+.offer-box h4 {
+  color: #222;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.offer-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Hover Effect */
+.offer-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .offer-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-box {
+    width: 90%;
+  }
+}
+
+/* Top Offer Banner */
+.top-offer {
+  background-color: #004aad;
+  /* Blue */
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.top-offer .highlight {
+  color: #ff6600;
+  /* Orange highlight */
+  font-weight: bold;
+}
+
+/* Navbar Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.nav-icons a {
+  color: #004aad;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+  color: #ff6600;
+  /* Orange on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-icons {
+    gap: 12px;
+  }
+
+  .nav-icons a {
+    font-size: 18px;
+  }
+}
+
+/* Header Icons */
+.header-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.header-icons a {
+  text-decoration: none;
+  color: #004aad;
+  /* Blue Theme */
+  font-size: 22px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: #ff6a00;
+  /* Orange Hover */
+}
+
+/* Cart Count Badge */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff6a00;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+/* Header Icons */
+.header-icons {
+  display: flex;
+  gap: 25px;
+  /* Space between icons */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.header-icons a {
+  text-decoration: none;
+  color: #004aad;
+  /* Blue */
+  font-size: 24px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-icons a:hover {
+  color: #ff6a00;
+  /* Orange on hover */
+  transform: scale(1.2);
+  /* Slight zoom effect */
+}
+
+/* Cart Count Badge */
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background: #ff6a00;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  background-color: #0077cc;
+  /* Modern blue */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Layout */
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+/* Logo */
+.logo h2 {
+  font-size: 28px;
+  color: #ff6600;
+  /* Foamix logo color */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  border-radius: 6px;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
+  color: #ff6600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Header Icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-icons a {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.header-icons a:hover {
+  color: #ff6600;
+}
+
+/* Cart Count */
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Profile Page Styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0077cc, #004c99);
+}
+
+.profile-box {
+  background-color: #fff;
+  width: 380px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.profile-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.profile-form .input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.profile-form .input-group i {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #0077cc;
+  font-size: 18px;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 12px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.profile-form input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.4);
+}
+
+/* Sign In Button */
+.btn-login {
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #005fa3;
+}
+
+/* Footer Links */
+.form-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-footer a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Social Login Buttons */
+.social-login a {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.google:hover {
+  background-color: #c23321;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #2d4373;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-login a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-login a.google {
+  background-color: #db4437;
+}
+
+.social-login a.facebook {
+  background-color: #1877f2;
+}
+
+.social-login a i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.social-login a:hover {
+  opacity: 0.85;
+}
