@@ -45,7 +45,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
     
-        <!-- Hamburger Menu for Mobile -->
+        <!-- Hamburger Menu -->
         <div class="menu-toggle">
           <span></span>
           <span></span>
@@ -53,6 +53,8 @@
         </div>
       </nav>
     </header>
+    
+    
     
   
       <!-- Header Icons -->
@@ -476,6 +478,20 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+</script>
+  
   
 </body>
 
