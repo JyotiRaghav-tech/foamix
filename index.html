@@ -51,32 +51,27 @@
           <span></span>
           <span></span>
         </div>
+    
+        <!-- Header Icons -->
+        <div class="header-icons">
+          <a href="profile.html" title="My Profile"><i class="fas fa-user"></i></a>
+          <a href="wishlist.html" title="My Wishlist"><i class="fas fa-heart"></i></a>
+        </div>
       </nav>
     </header>
     
-    
-    
-  
-      <!-- Header Icons -->
-      <div class="header-icons">
-        <a href="profile.html" title="My Profile"><i class="fas fa-user"></i></a>
-        <a href="wishlist.html" title="My Wishlist"><i class="fas fa-heart"></i></a>
-        
-          
-        </a>
+    <!-- Hero Video Section -->
+    <section class="hero">
+      <video autoplay muted loop class="hero-video">
+        <source src="videos/mattress-hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay">
+        <h1>Your Perfect Mattress Awaits</h1>
+        <p>Comfortable, Durable & Supportive</p>
       </div>
-    </nav>
-  </header>
-  
-
-  <!-- Hero Video Section -->
-  <section class="hero">
-    <video autoplay muted loop class="hero-video">
-      <source src="videos/mattress-hero.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-overlay">
-
+    </section>
+    
       <!-- Offer Highlights Section -->
       <section class="offer-highlights">
         <div class="offer-box">
@@ -488,6 +483,27 @@
       menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('show');
       });
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navbar = document.querySelector('.navbar');
+    const hero = document.querySelector('.hero');
+
+    // Hamburger toggle
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+
+    // Hero offset to avoid navbar covering video
+    if (navbar && hero) {
+      const navHeight = navbar.offsetHeight;
+      hero.style.marginTop = navHeight + "px";
     }
   });
 </script>
