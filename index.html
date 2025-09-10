@@ -51,21 +51,14 @@
           <span></span>
           <span></span>
         </div>
+    
+        <!-- Header Icons -->
+        <div class="header-icons">
+          <a href="profile.html"><i class="fas fa-user"></i></a>
+          <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+        </div>
       </nav>
-    </header>
-    
-    
-  
-      <!-- Header Icons -->
-      <div class="header-icons">
-        <a href="profile.html" title="My Profile"><i class="fas fa-user"></i></a>
-        <a href="wishlist.html" title="My Wishlist"><i class="fas fa-heart"></i></a>
-        
-          
-        </a>
-      </div>
-    </nav>
-  </header>
+      </header>
   
 
   <!-- Hero Video Section -->
@@ -478,7 +471,26 @@
   });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navbar = document.querySelector('.navbar');
+    const hero = document.querySelector('.hero');
 
+    // Hamburger toggle
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+    }
+
+    // Hero offset so navbar doesn't cover video
+    if (navbar && hero) {
+      const navHeight = navbar.offsetHeight;
+      hero.style.marginTop = navHeight + "px";
+    }
+  });
+</script>
+  
   
 </body>
 

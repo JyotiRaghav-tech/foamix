@@ -3366,5 +3366,142 @@ button {
     display: flex;
   }
 }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
+.navbar .logo h2 {
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: block;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background: #007BFF;
+  min-width: 150px;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Header Icons */
+.header-icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* Hero Video */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #007BFF;
+  }
+
+  .nav-links.show {
+    max-height: 500px;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .dropdown-content {
+    position: relative;
+    background: #0056b3;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero {
+    margin-top: 60px;
+  }
+
+  /* offset for sticky navbar */
+}
 /* Remove extra static spacing – hero section will naturally start below navbar */
