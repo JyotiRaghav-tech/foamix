@@ -23,42 +23,42 @@
   
   <!-- Header / Navigation -->
   <header>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <h2>Foamix</h2>
-        </div>
-    
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Products <i class="fas fa-caret-down"></i></a>
-            <ul class="dropdown-content">
-              <li><a href="mattress.html">Mattresses</a></li>
-              <li><a href="pillow.html">Pillows</a></li>
-            </ul>
-          </li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-    
-        <!-- Header Icons -->
-        <div class="header-icons">
-          <a href="profile.html"><i class="fas fa-user"></i></a>
-          <a href="wishlist.html"><i class="fas fa-heart"></i></a>
-        </div>
-      </nav>
-      </header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>Foamix</h2>
+      </div>
+  
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Products <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="mattress.html">Mattresses</a></li>
+            <li><a href="pillow.html">Pillows</a></li>
+          </ul>
+        </li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <!-- ✅ Right Side Icons -->
+      
+  
+      <!-- Hamburger Menu for Mobile -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  
+  
+  
   
 
   <!-- Hero Video Section -->
@@ -377,6 +377,17 @@
       </a>
     </div>
   </section>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/message/WDIE33I6JFOUL1" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919876543210" class="call-btn" title="Call Us">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
   
   <!-- Footer -->
   <footer>
@@ -395,68 +406,12 @@
     </div>
   </footer>
 
-  <!-- Floating Contact Buttons -->
-  <div class="floating-contact">
-    <a href="https://wa.me/message/WDIE33I6JFOUL1" class="whatsapp-button" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-    </a>
+
+
   
-    <a href="tel:+919876543210" class="contact-btn call">
-      <i class="fas fa-phone-alt"></i>
-    </a>
-  </div>
 
-  <script>
-    const dropBtn = document.querySelector('.dropbtn');
-    const dropdown = document.querySelector('.dropdown');
 
-    dropBtn.addEventListener('click', () => {
-      dropdown.classList.toggle('active');
-    });
-  </script>
-<script>
-  const slider = document.querySelector('.testimonial-slider');
-  const next = document.querySelector('.next');
-  const prev = document.querySelector('.prev');
 
-  const scrollAmount = 370; // card width + gap
-
-  next.addEventListener('click', () => {
-    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  });
-
-  prev.addEventListener('click', () => {
-    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  });
-</script>
-<script>
-  let cartCount = 0;
-  const cartBadge = document.querySelector(".cart-count");
-
-  function addToCart() {
-    cartCount++;
-    cartBadge.textContent = cartCount;
-  }
-</script>
-<!-- WhatsApp Business Floating Button -->
-<div class="whatsapp-float" onclick="openWhatsApp()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-</div>
-
-<script>
-  function openWhatsApp() {
-    window.open("https://wa.me/message/WDIE33I6JFOUL1", "_blank");
-  }
-</script>
-
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-</script>
   
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -491,7 +446,17 @@
   });
 </script>
   
-  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
+
 </body>
 
 </html>

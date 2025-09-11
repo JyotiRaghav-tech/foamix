@@ -25,38 +25,42 @@ header {
   z-index: 1000;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
 }
 
-nav .logo h2 {
+/* Logo */
+.logo h2 {
   color: #ff6600;
   font-size: 24px;
   cursor: pointer;
 }
 
-nav ul {
+/* Nav links */
+.nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
+.nav-links li {
   position: relative;
 }
 
-nav ul li a {
+.nav-links a {
   color: #333;
   font-weight: bold;
   padding: 8px 12px;
   transition: color 0.3s;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
+.nav-links a.active,
+.nav-links a:hover {
   color: #ff6600;
 }
 
@@ -89,6 +93,21 @@ nav ul li a:hover {
   display: block;
 }
 
+/* ✅ Header Icons */
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-icons a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.header-icons a:hover {
+  color: #ff6600;
+}
 /* Hero Video Section */
 .hero {
   position: relative;
@@ -3505,3 +3524,93 @@ button {
   /* offset for sticky navbar */
 }
 /* Remove extra static spacing – hero section will naturally start below navbar */
+/* Header Icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* spacing between icons */
+  margin-left: auto;
+  /* push icons to right in flex container */
+}
+
+.header-icons a {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Adjustment */
+@media screen and (max-width:768px) {
+  .header-icons {
+    margin-left: 0;
+    /* center below hamburger if needed */
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+  /* push right on desktop */
+}
+
+.header-icons a {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .header-icons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Floating Buttons */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+
+.floating-buttons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.call-btn {
+  background-color: #007BFF;
+}
+
