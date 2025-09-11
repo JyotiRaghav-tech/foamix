@@ -69,6 +69,15 @@
     </video>
     <div class="hero-overlay">
 
+      <script>
+        const toggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+
       <!-- Offer Highlights Section -->
       <section class="offer-highlights">
         <div class="offer-box">
