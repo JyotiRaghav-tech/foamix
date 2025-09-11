@@ -69,14 +69,7 @@
     </video>
     <div class="hero-overlay">
 
-      <script>
-        const toggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-
-        toggle.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-        });
-      </script>
+      
 
       <!-- Offer Highlights Section -->
       <section class="offer-highlights">
@@ -392,7 +385,7 @@
     <a href="https://wa.me/message/WDIE33I6JFOUL1" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="tel:+919876543210" class="call-btn" title="Call Us">
+    <a href="tel:+919220372128" class="call-btn" title="Call Us">
       <i class="fas fa-phone-alt"></i>
     </a>
   </div>
@@ -456,15 +449,31 @@
 </script>
   
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+  // Hamburger click
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Dropdown click for mobile
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(drop => {
+    drop.addEventListener('click', e => {
+      e.stopPropagation(); // prevent closing parent
+      drop.querySelector('.dropdown-content').classList.toggle('active');
+    });
+  });
+
+  // Optional: click outside closes all dropdowns
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown-content.active').forEach(dc => {
+      dc.classList.remove('active');
     });
   });
 </script>
+  
 
 </body>
 
